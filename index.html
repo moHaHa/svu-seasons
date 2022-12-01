@@ -19,8 +19,8 @@
     <div id="app">
         <form name="form1" method="post" action="Default.aspx" id="form1">
             <div>
-                <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
-                <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+                <input type="hidden" name="eTarget" id="eTarget" value="" />
+                <input type="hidden" name="eArgument" id="eArgument" value="" />
                 <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
                 <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
                     value="pkeCw30Ckwqmn+lHrFJO0U2oRzf9MvfVNxD5YJmvX+YKb297EhRN0Ijbe0iyqO3O6qNRYp+UQAAthZzWpLdbm38mEpV9dM2mExkMGIoj20nxNdfaBUe5+ifSKUtBOGXf6vmcHyIW2DtcOHaZN93p790axsJmZwTMFM7xTcCulwtH3PGrkaPYhGVJ0zb6p8wEoGb68nWwmYTs+8TLyOnLGW1LLRecdtLqtFZfpZV64FxJodMe2q+lSm2/mspkMPMFS0UTWhCGryUZDpyPp83HbkhwNuEZkNWsLftE9P1uzYzHM9KMBQZ/mM2SDjxRcYL53622rVkLgzyZw/RQMrY4gVU8KIe69lJeScTidFF41QtDbH9dZo5R8u8djl0HM8IdSF/FOBuAKmGvcD8/6wTitR0c8aFHvYeuZEFzSQ6kijLJtYYQiUgdR1Uo/ceRZLaD0su9KHVdoFS81MEsiGeP0sGLOR3FHOSK8an5I7nAzzL4t+p03lHboLQFtOw1Tlcjv0cFB2AR4H79n+UHPgYy2000oy5T+izZWucyf5MEbpP8tffGCRhlpfk/QBJrYIMwEEUM+KkVxJjKB+5GY8mQi+LXsN8OAsCWdVJ0WrTDzx0GecyNfhYtSPMKqsvl/fHNPSjzDLOHoltgYfF5SAby7OCuF3KVK0xIFyMogZGbSUIom3C0WXCKRXJ/hW2vQB8QoVH7UHwziSNTJzAfNprMbgw43QLL7BTMDI1rVrFD3FjLzzBE7cE/GeywBxHqhMsLXCl25QG5fIrtASqiN+ZI1dNmoGA6yo4Xc7nmRobygtRZ+Pe8OXAkZ+RhzL+vrBRbzOkd9urvBBdLMi4m3Tbk2+ran67RevO2nngCHrnlpNEKpbgb5PRyIfifkmGLFL6B6fsUvrT5fqCoEALIfDru2a4lmED++6Zy1B/WXaj8Coo6QDn+" />
@@ -34,8 +34,8 @@
                 }
                 function __doPostBack(eventTarget, eventArgument) {
                     if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-                        theForm.__EVENTTARGET.value = eventTarget;
-                        theForm.__EVENTARGUMENT.value = eventArgument;
+                        theForm.eTarget.value = eventTarget;
+                        theForm.eArgument.value = eventArgument;
                         theForm.submit();
                     }
                 }
